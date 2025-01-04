@@ -1,0 +1,513 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#head {
+  margin: 0px;
+}
+
+#main {
+  background-color: white;
+  flex: 1;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#content {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#navbar {
+  background-color: #2c2c2c;
+  color: #2c2c2c;
+}
+
+#name {
+  color: #eaeaea;
+  font-size: xx-large;
+}
+
+#navbar a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+#navbar a:hover {
+  color: #20c997;
+}
+
+#navlist {
+  margin: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+  padding: 0px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  padding: 20px;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#home h1{
+  margin: 10px;
+  align-self: center;
+}
+
+#home i{
+  font-size: xx-large;
+}
+
+#home p{
+  font-size: x-large;
+  font-weight: 500;
+}
+
+#quote{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  max-width: 80%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#about h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 10px;
+}
+
+#about p{
+  font-size: 1.5em;
+  margin: 10px;
+  line-height: 50px;
+  text-indent: 100px;
+  text-align: justify;
+}
+
+#about-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+#about-me{
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#about-details {
+  display: flex;
+  flex-direction: row;
+}
+#about-details h3{
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+#education {
+  flex: 0.5;
+  margin: 10px;
+  font-weight: 500;
+  border-right: #2c2c2c solid 5px;
+}
+
+#education ul {
+  list-style-type: square;
+  font-size: 1.5em;
+}
+
+#internships {
+  flex: 0.5;
+  margin: 10px;
+  font-weight: 500;
+}
+#internships p {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 30px;
+  text-align: left;
+}
+
+#internships ul {
+  list-style-type: square;
+  font-size: 1.5em;
+}
+
+#about-photo {
+  display: flex;
+  flex: 0.2;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#profile {
+  width: 300px;;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#skills h1 {
+  font-size: 2em;
+  align-self: center;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+#skills-list {
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto; 
+  gap: 30px;
+  margin: 10px;
+}
+
+#skill-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c2c2c;
+  color: #eaeaea;
+}
+
+#skill-box h5{
+  margin: 10px;
+}
+
+#skill-box p {
+  margin: 10px;
+}
+
+.skill-icons {
+  font-size: 3em;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#projects h1 {
+  font-size: 2em;
+  align-self: center;
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+#project-boxes {
+  display: flex;
+  gap: 75px;
+  margin: 10px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#project-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #2c2c2c;
+  padding: 10px;
+}
+
+#project-box h4 {
+  margin: 10px;
+}
+
+#project-box p {
+  margin: 10px;
+}
+
+#projects a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: #20c997;
+}
+
+#project-box img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+#contact {
+  background-color: #eaeaea;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+#contact h1 {
+  font-size: 2em;
+  justify-self: center;
+  margin: 10px;
+}
+
+#contact-details ul{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-self: center;
+  align-self: center;
+}
+
+#contact-info{
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+#contact-info div{
+  display: flex;
+}
+
+#contact-info p{
+  font-size: 1.2em;
+}
+
+.contact-type{
+  font-weight: 500;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #2c2c2c;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0px;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #20c997;
+}
+
+#socials {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 1000px) {
+  #about{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #about-content {
+    flex-direction:column-reverse;
+  }
+  
+  #projects{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #project-boxes{
+    gap: 30px;
+  }
+
+  #skills{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #skills-list{
+    grid-template-columns: auto auto auto auto auto;
+  }
+}
+
+@media (max-width:480px) {
+  #name{
+    font-size: larger;
+  }
+
+  #navbar a{
+    font-size: 0.75em;
+  }
+
+  #home{
+    height: 80vh;
+  }
+
+  #home h1{
+    font-size: 1.2em;
+  }
+
+  #home i{
+    font-size: larger;
+  }
+
+  #home p{
+    font-size: large;
+  }
+
+  #about {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #about h1{
+    font-size: 1.2em;
+  } 
+
+  #profile{
+    width: 187.5px;
+    height:  250px;
+  }
+
+  #about p{
+    font-size: 1em;
+    line-height: 30px;
+    margin: 0px;
+  }
+
+  #about-details{
+    flex-direction: column;
+  }
+
+  #about-details h3{
+    font-size: 1em;
+  }
+
+  #education{
+    border: none;
+  }
+
+  #education ul{
+    font-size: 1em;
+  }
+
+  #internships p{
+    font-size: 1em;
+    line-height: 20px;
+  }
+
+  #internships ul{
+    font-size: 1em;
+  }
+
+  #projects{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #projects h1{
+    font-size: 1.2em;
+  }
+
+  #project-boxes{
+    gap: 10px;
+  }
+
+  #project-box img{
+    width: 150px;
+    height: 150px;
+  }
+
+  #project-box h4{
+    font-size: small;
+  }
+
+  #project-box p {
+    font-size: small;
+  }
+
+  #skills{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #skills h1{
+    font-size: 1.2em;
+  }
+
+  #skills-list{
+    grid-template-columns: auto auto;
+  }
+
+  #contact h1{
+    font-size: 1.2em;
+  }
+
+  #contact-info p{
+    font-size: 1em;
+  }
+
+  #contact-details ul{
+    padding-inline-start: 0px;
+  }
+
+  footer{
+    padding: 10px;
+    gap: 5px;
+  }
+
+  footer p{
+    font-size: small;
+  }
+}
