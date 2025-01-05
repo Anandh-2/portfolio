@@ -8,13 +8,13 @@ export default function Footer() {
     <div>
       <footer>
         <div id="socials">
-          <a href="https://www.linkedin.com/in/anandhk/">
+          <a href="https://www.linkedin.com/in/anandhk/" target="_blank" rel="noreferrer noopener">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/Anandh-2">
+          <a href="https://github.com/Anandh-2" target="_blank" rel="noreferrer noopener">
             <FaGithub />
           </a>
-          <a href="https://www.instagram.com/anandh_k_02/">
+          <a href="https://www.instagram.com/anandh_k_02/" target="_blank" rel="noreferrer noopener">
             <FaInstagram />
           </a>
         </div>
