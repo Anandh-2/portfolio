@@ -30,13 +30,27 @@ body {
 }
 
 #navbar {
+  display: flex;
+  flex-direction: column;
   background-color: #2c2c2c;
   color: #2c2c2c;
+  height: 80px;
+  justify-content: center;
 }
 
 #name {
   color: #eaeaea;
   font-size: xx-large;
+  margin: 0;
+}
+
+#navbar #menu-button{
+  display: none;
+  font-size: larger;
+}
+
+#navbar #menu-button:hover{
+  cursor: pointer;
 }
 
 #navbar a {
@@ -57,6 +71,43 @@ body {
   list-style-type: none;
   color: white;
   padding: 0px;
+}
+
+.sidebar{
+  display: none;
+  position:fixed;
+  right: 0;
+  background-color: #2c2c2c;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+}
+
+.sidebar ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  padding: 0;
+}
+
+.sidebar a{
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.sidebar a:hover{
+  color: #20c997;
+}
+
+#sidebar-footer{
+  display: flex;
+  gap:10px;
+  font-size: medium;
+  padding-bottom: 20px;
 }
 
 #home {
@@ -284,6 +335,7 @@ body {
 #project-box img {
   max-width: 250px;
   max-height: 250px;
+  border-radius: 20px;
 }
 
 #contact {
@@ -353,6 +405,26 @@ footer a:hover {
 }
 
 @media (max-width: 1000px) {
+  .listelement{
+    display: none;
+  }
+
+  #navlist{
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #navbar #menu-button{
+    display: inline;
+  }
+
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+  }
+
   #about{
     padding-left: 30px;
     padding-right: 30px;
@@ -379,6 +451,10 @@ footer a:hover {
   #skills-list{
     grid-template-columns: auto auto auto auto auto;
   }
+
+  footer{
+    display: none;
+  }
 }
 
 @media (max-width:480px) {
@@ -388,6 +464,15 @@ footer a:hover {
 
   #navbar a{
     font-size: 0.75em;
+  }
+
+  .sidebar{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .sidebar a{
+    font-size: 1em;
   }
 
   #home{
