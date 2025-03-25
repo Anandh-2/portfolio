@@ -33,50 +33,50 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      {isOpen && (
-        <div className="sidebar">
-          <ul>
-            <li className="sidebar-list">
-              <a href="#home">Home</a>
-            </li>
-            <li className="sidebar-list">
-              <a href="#about">About</a>
-            </li>
-            <li className="sidebar-list">
-              <a href="#projects">Projects</a>
-            </li>
-            <li className="sidebar-list">
-              <a href="#skills">Skills</a>
-            </li>
-            <li className="sidebar-list">
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <div id="sidebar-footer">
-            <a
-              href="https://www.linkedin.com/in/anandhk/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://github.com/Anandh-2"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.instagram.com/anandh_k_02/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FaInstagram />
-            </a>
-          </div>
+
+      <div className={`sidebar ${isOpen?"open":""}`}>
+        <ul>
+          <li className="sidebar-list">
+            <a href="#home">Home</a>
+          </li>
+          <li className="sidebar-list">
+            <a href="#about">About</a>
+          </li>
+          <li className="sidebar-list">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="sidebar-list">
+            <a href="#skills">Skills</a>
+          </li>
+          <li className="sidebar-list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div id="sidebar-footer">
+          <a
+            href="https://www.linkedin.com/in/anandhk/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/Anandh-2"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.instagram.com/anandh_k_02/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaInstagram />
+          </a>
         </div>
-      )}
+      </div>
+      {isOpen && <div className="overlay" onClick={()=>setIsOpen(false)}></div>}
     </header>
   );
 }
