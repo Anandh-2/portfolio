@@ -8,23 +8,26 @@ export default function About() {
       <div id="about-content">
         <div id="about-me">
           <p>
-            I am a passionate coder. Currently pursuing an engineering degree in Electronics and Communication Engineering. 
-            I am a self-taught web developer. I have a good understanding of HTML, CSS, JavaScript, and React. Hence a wellversed frontend developer. 
-            I also have strong foundations in C, Java, and Data Structures. And also started learning backend development. 
+              I am a passionate coder. Currently pursuing an engineering degree in Electronics and Communication Engineering. 
+              I am a self-taught web developer. I have a strong foundation in Java, C Programming and Data Structures.  
+              And also well-versed in full stack development. I have worked with MERN stack and currently exploring Spring Boot.
           </p>
           <div id="about-details">
             <div id="education">
               <h3>Education</h3>
               <ul>
-                <li>BE ECE || 8 CGPA</li>
-                <li>HSC || 90.5%</li>
+                <li>BE ECE | 7.9 CGPA</li>
+                <li>HSC | 90.5%</li>
               </ul>
             </div>
             <div id="internships">
               <h3>Internships</h3>
               <ul>
                 <li>
-                  CoderOne: <p>Two month internship on web development.</p>
+                  Zoho - Technical Trainee: <p>Got exposure to Networking and Endpoint Management.</p>
+                </li>
+                <li>
+                  CoderOne - Web Developer: <p>Gained hands-on experience in full stack development.</p>
                 </li>
               </ul>
             </div>
