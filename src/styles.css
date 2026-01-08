@@ -448,6 +448,10 @@ footer a:hover {
     flex-direction: column-reverse;
   }
 
+  #education ul {
+    line-height: 20px;
+  }
+
   #projects {
     padding-left: 30px;
     padding-right: 30px;
